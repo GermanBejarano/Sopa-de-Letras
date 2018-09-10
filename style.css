@@ -1,0 +1,177 @@
+*{
+	margin: 5px;
+	padding: 0;
+}
+
+/*  Fondo y texto del cuerpo */
+body{
+  background-position: center center;
+  background: radial-gradient(circle, white, grey);
+  background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Leckerli One', cursive;
+  font-size: 15px;  
+}
+
+h1{
+  font-family: 'Leckerli One', cursive;
+	font-size: 50px;
+  text-align: center;
+}
+
+
+/* Estilos de los botones */
+
+.Texto{
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+  font-family: 'Leckerli One', cursive;
+  
+}
+
+#resolver{
+
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #01A9DB;
+  border-radius: 6px;
+  border: 2px solid #086A87;
+}
+
+#resolver:hover{
+  color: #01A9DB;
+  background-color: #ffffff;
+}
+
+#agregar{
+
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #01DF3A;
+  border-radius: 6px;
+  border: 2px solid #088A29;
+}
+
+#agregar:hover{
+  color: #01DF3A;
+  background-color: #ffffff;
+}
+
+
+#limpiar{
+
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #01DF74;
+  border-radius: 6px;
+  border: 2px solid #088A68;
+}
+
+#limpiar:hover{
+  color: #01DF74;
+  background-color: #ffffff;
+}
+
+#crear{
+
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #01DFD7;
+  border-radius: 6px;
+  border: 2px solid #088A85;
+}
+
+#crear:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+}
+
+/* Estilos para el juego */
+
+#juego {
+  border: 1px solid black;
+  padding: 20px;
+  float: left;
+  margin: 30px 20px 20px 650px;
+  position: absolute;
+}
+
+#juego div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* style for each square in the puzzle */
+#juego .puzzleSquare {
+  height: 30px;
+  width: 30px;
+  text-transform: uppercase;
+  background-color: white;
+  border: 0;
+  font: 1em sans-serif;
+}
+
+/* Contorno de la sopa de letras */
+button::-moz-focus-inner {
+  border: 0;
+}
+
+/* Color que indica cuando se esta seleccionando */
+#juego .selected {
+  background-color: orange;
+}
+
+/* Color azul: Indica cuando la palabra es encontrada*/ 
+#juego .found {
+  background-color: blue;
+  color: white;
+}
+
+/* Color lila: Indica cuando oprime el boton "resolver" */
+#juego .solved {
+  background-color: purple;
+  color: white;
+}
+
+/* Color verde: Indica que se completo con exito la sopa de letras */
+#juego .complete {
+  background-color: green;
+}
+
+/* Codigo para listar las palabras */
+#Palabras {
+  padding-top: 20px;
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  width: 300px;
+}
+
+#Palabras ul {
+  list-style-type: none;
+}
+
+#Palabras li {
+  padding: 3px 0;
+  font: 1em sans-serif;
+}
+
+/* Codigo que indica que la palabra ha sido encontrada y la marca con una linea en el centro color gris */
+#Palabras .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+

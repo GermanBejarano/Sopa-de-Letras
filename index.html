@@ -1,0 +1,44 @@
+<!-- Pagina principal para el juego sopa de letras 
+    Autor: German B -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sopa de letras</title>
+
+<!-- Enlace con el archivo .css el cual sirve para darle estilos a la pagina, es decir una mejor apariencia-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sopa de letras</h1><br /><br />
+    </header>
+
+<!-- Seccion donde se crean los botones y campos de texto de la pagina  -->
+<center>
+    <hr>
+    <input class="Texto" type="text" id="palabra" placeholder="Palabra" /> <br /><br />
+
+    <input id="agregar" type="button" onClick="Palabra(); " value="Agregar palabra" />
+    <input id="limpiar" type="reset" value="Limpiar">
+    <button onclick="Crear();" id="crear"> Crear Juego</button>
+    <button id='resolver'>Resolver</button><br />
+    <hr>
+</center>
+
+<!-- Secciones principales las cuales son juego y Palabras las cuales sirven para la formacion del contorno y el 
+     contenido de la sopa de letras -->
+     <div id='juego'></div>
+     <div id='Palabras'></div>
+
+   
+</body>
+  
+<!-- Enlaces con los archivos de JavaScript (Se ponen en esta ocacion hasta el final del codigo para que cargue toda la pagina 
+    con mas velocidad y por ultimo se descarguen los scripts). Se utiliza las librerias wordfind y wordfindgame de javascript -->
+<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<script type="text/javascript" src="JavaScript.js"></script> 
+<script type="text/javascript" src="wordfind.js"></script> 
+<script type="text/javascript" src="wordfindgame.js"></script> 
+
+</html>
